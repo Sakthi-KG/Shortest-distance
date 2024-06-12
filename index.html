@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Network Routing</title>
+</head>
+<body>
+  <div id="title">
+    Network Routing
+  </div>
+  <div id="img-container">
+    <img src="dijkstra.gif" id="graph">
+  </div>
+  <div id="input-btn-container">
+    <button id="input-btn" onclick="getUserInput()">
+      Get inputs
+    </button>
+  </div>
+  <div id="input-grid">
+    <div id="starting-node">
+      Enter the Source Node
+      <input type="text" id="start-node" placeholder="0-8">
+    </div>
+    <div id="ending-node">
+      Enter the Destination Node
+      <input type="text" id="end-node" placeholder="0-8">
+    </div>
+  </div>
+  <div id="input-btn-container">
+    <button id="input-btn" onclick="findShortestDistance()">
+      Calculate Shortest Distance
+    </button>
+  </div>
+  <div id="result-viewer">
+  </div>
+  <script src="scripts.js"></script>
+</body>
